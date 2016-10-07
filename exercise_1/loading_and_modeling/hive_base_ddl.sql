@@ -1,3 +1,14 @@
+DROP TABLE survey_results;
+DROP TABLE tec_hospital;
+DROP TABLE tec_state;
+DROP TABLE tec_nation;
+DROP TABLE readm_hospital;
+DROP TABLE readm_state;
+DROP TABLE readm_nation;
+DROP TABLE comp_hospital;
+DROP TABLE comp_state;
+DROP TABLE comp_nation
+
 CREATE EXTERNAL TABLE survey_results(
 provider_id int,
 hospital_name varchar(50),
