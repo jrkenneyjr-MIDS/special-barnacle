@@ -7,7 +7,7 @@ DROP TABLE readm_state;
 DROP TABLE readm_nation;
 DROP TABLE comp_hospital;
 DROP TABLE comp_state;
-DROP TABLE comp_nation
+DROP TABLE comp_nation;
 
 CREATE EXTERNAL TABLE survey_results(
 provider_id int,
@@ -220,21 +220,3 @@ WITH SERDEPROPERTIES(
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/comp_state';
 
-CREATE EXTERNAL TABLE comp_nation (
-meas_name varchar(150),
-meas_id varchar(20),
-nrate decimal,
-hosp_worse int,
-hosp_same int,
-hosp_better int,
-hosp_few int,
-footnote varchar(200),
-start_meas date,
-end_meas date)
-ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
-WITH SERDEPROPERTIES(
-"separatorChar"=",",
-"quoteChar" = "'",
-"escapeChar" = "\\")
-STORED AS TEXTFILE
-LOCATION '/user/w205/hospital_compare/comp_nation';
