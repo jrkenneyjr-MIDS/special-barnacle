@@ -223,6 +223,7 @@ LOCATION '/user/w205/hospital_compare/comp_state';
 CREATE EXTERNAL TABLE comp_nation (
 meas_name varchar(150),
 meas_id varchar(20),
+nrate decimal,
 hosp_worse int,
 hosp_same int,
 hosp_better int,
