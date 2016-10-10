@@ -1,13 +1,39 @@
-DROP TABLE survey_results;
-DROP TABLE tec_hospital;
-DROP TABLE tec_state;
-DROP TABLE tec_nation;
-DROP TABLE readm_hospital;
-DROP TABLE readm_state;
-DROP TABLE readm_nation;
-DROP TABLE comp_hospital;
-DROP TABLE comp_state;
-DROP TABLE comp_nation;
+drop table comp_hospital;
+drop table comp_nation;
+drop table comp_nratecounts;
+drop table comp_nrateranks;
+drop table comp_rankings;
+drop table comp_scoring;
+drop table comp_sd;
+drop table comp_state;
+drop table hospital_comp1;
+drop table hospital_comp2;
+drop table hospital_readm1;
+drop table hospital_final;
+drop table hospital_readm2 
+drop table hospital_tec1;
+drop table hospital_tec2;
+drop table readm_clean;
+drop table readm_hospital;
+drop table readm_nation;
+drop table readm_nratecounts;
+drop table readm_nrateranks;
+drop table readm_rankings;
+drop table readm_scoring;
+drop table readm_sd;
+drop table readm_state;
+drop table state_summary;
+drop table survey_results;
+drop table tec_hospital;
+drop table tec_nation;
+drop table tec_nratecounts;
+drop table tec_nrateranks;
+drop table tec_rankings;
+drop table tec_scoring;
+drop table tec_sd;
+drop table tec_with_comparison;
+drop table tec_with_national;
+drop table tec_state;
 
 CREATE EXTERNAL TABLE survey_results(
 provider_id int,
@@ -93,6 +119,7 @@ LOCATION '/user/w205/hospital_compare/tec_state';
 CREATE EXTERNAL TABLE tec_nation (
 meas_name varchar(150),
 meas_id varchar(20),
+condition varchar(100),
 category varchar(50),
 score int,
 footnote varchar(200),

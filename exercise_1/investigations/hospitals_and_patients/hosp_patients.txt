@@ -1,0 +1,13 @@
+Correlation Between Surveys and Combined Scores
+
+Finally, to see if there was a correlation between hospital quality and patient survey
+ responses, a simple correlation was done between the cumulative rank score and 
+ variability with the survey response base scores and consistency measures reported 
+ by the HVBP HCAHPS. 
+
+Unfortunately, there does not seem to be a sizeable correlation between the combined 
+average rank and the survey response base score for the hospital (r = 0.02).  There was 
+a slightly stronger correlation when comparing with the survey consistency measure 
+(r = -0.10), but nothing practically significant.  Similarly, there was virtually 
+no significant correlation to speak of between the variability of a hospitals 
+performance and the survey base score (r = -0.14) and consistency (r = -0.07). 

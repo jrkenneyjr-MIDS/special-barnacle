@@ -43,6 +43,9 @@ mv tec_hospital.csv tec_hospital/
 mv tec_state.csv tec_state/
 mv tec_nation.csv tec_nation
 mv survey_results.csv survey_results/
+cd ..
 
 hdfs dfs -put hospital_compare /user/w205/
 hdfs dfs -du /user/w205/hospital_compare
+
+hive -f hive_base_ddl.sql
