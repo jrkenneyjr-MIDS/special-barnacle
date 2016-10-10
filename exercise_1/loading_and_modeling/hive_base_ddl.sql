@@ -46,7 +46,6 @@ consistency int)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/survey_results';
@@ -71,7 +70,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/tec_hospital';
@@ -88,7 +86,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/tec_state';
@@ -104,34 +101,32 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/tec_nation';
 
 CREATE EXTERNAL TABLE readm_hospital (
-provider_id int,
-hospital_name varchar(50),
-address varchar(50),
-city varchar(50),
-stateID varchar(2),
-zip int,
-county varchar(50),
-phone int,
-meas_name varchar(150),
-meas_id varchar(20),
-nrate varchar(50),
-denom int,
-score decimal,
-lcl decimal,
-ucl decimal,
-footnote varchar(200),
-start_meas date,
-end_meas date)
+provider_id string,
+hospital_name string,
+address string,
+city string,
+stateID string,
+zip string,
+county string,
+phone string,
+meas_name string,
+meas_id string,
+nrate string,
+denom string,
+score string,
+lcl string,
+ucl string,
+footnote string,
+start_meas string,
+end_meas string)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/readm_hospital';
@@ -150,7 +145,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/readm_state';
@@ -169,7 +163,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/readm_nation';
@@ -196,7 +189,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/comp_hospital';
@@ -215,7 +207,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/comp_state';
@@ -234,7 +225,6 @@ end_meas date)
 ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES(
 "separatorChar"=",",
-"quoteChar" = "'",
 "escapeChar" = "\\")
 STORED AS TEXTFILE
 LOCATION '/user/w205/hospital_compare/comp_nation';
