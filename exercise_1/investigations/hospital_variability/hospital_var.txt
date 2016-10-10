@@ -1,9 +1,9 @@
 Most Variable Procedures
 
-Since the procedures were separated by category, it seemed reasonable to compare 
-variation in procedure scores without attempting to bridge the different broad 
-categories (i.e. TEC, Readm, Comp).  For this reason, the top ten most highly 
-variable procedures were presented for each category.
+Since the procedures were separated by category, it did not seem appropriate 
+to try to compare variability between them, since it was not an apples-to-apples
+comparison (i.e. TEC vs. Readm, Comp).    For this reason, the top ten most highly 
+variable procedures were presented independently for each category.
 
 Variability for a procedure was assessed by taking the standard deviation of all 
 scores reported for that measure.
