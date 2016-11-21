@@ -31,7 +31,7 @@ class TweetStreamListener(tweepy.StreamListener):
         super(self.__class__, self).__init__(listener.tweepy_api())
 
     def on_status(self, status):
-        self.listener.queue().put(status.text, timeout = 0.01)
+        self.listener.queue().put(status.text, timeout = 1) # Changed from 0.01
         return True
   
     def on_error(self, status_code):
@@ -43,7 +43,7 @@ class TweetStreamListener(tweepy.StreamListener):
 class Tweets(Spout):
 
     def initialize(self, stormconf, context):
-        self._queue = Queue.Queue(maxsize = 1000)
+        self._queue = Queue.Queue(maxsize = 1000) # Changed from 10
 
         consumer_key = auth_get("consumer_key") 
         consumer_secret = auth_get("consumer_secret") 
@@ -61,6 +61,7 @@ class Tweets(Spout):
 
         # Create the stream and listen for english tweets
         stream = tweepy.Stream(auth, listener, timeout=None)
+		# Expanded to include top 20 most common English words
         stream.filter(languages=["en"], track=["the", "be", "to", "of", "and", "a", "in", "that", "have", "i", "it", "for", "not", "on", "with", "he", "as", "you", "do", "at"], async=True)
 	
     def queue(self):
@@ -71,7 +72,7 @@ class Tweets(Spout):
 
     def next_tuple(self):
         try:
-            tweet = self.queue().get(timeout = 10)  #.1 
+            tweet = self.queue().get(timeout = 10)  # Changed from 0.1 
             if tweet:
                 self.queue().task_done()
                 self.emit([tweet])

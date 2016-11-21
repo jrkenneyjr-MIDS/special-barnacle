@@ -34,8 +34,8 @@ class ParseTweet(Bolt):
             if word.startswith("http"): continue
 
             # Strip leading and lagging punctuations and make all characters lowercase
-            aword = word.strip("\"?>-@<!$&*^%,'~|.:;)(")
-	    aword = aword.lower()
+            aword = word.strip("\"?>-@~#*[]/+=<!$&*^%,'~|.:;)(")
+			aword = aword.lower()
 
             # now check if the word contains only ascii
             if len(aword) > 0 and ascii_string(word):
