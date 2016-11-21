@@ -6,7 +6,7 @@ cur = conn.cursor()
 
 #Select
 if len(sys.argv) == 1:
- 	cur.execute("SELECT * FROM Tweetwordcount WHERE word !~ '^[1-9]' ORDER BY word ASC LIMIT 50;")
+ 	cur.execute("SELECT * FROM Tweetwordcount WHERE word !~ '^[0-9]' ORDER BY word ASC LIMIT 50;")
 	records = cur.fetchall()
 	for rec in records:
    		print ("word = " + str(rec[0]) + '\t' + "count = " + str(rec[1]))
