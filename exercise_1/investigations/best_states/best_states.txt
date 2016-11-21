@@ -1,0 +1,18 @@
+
+Best States
+
+The best performing states were taken to be those for whose average combined rank 
+score across all constituent hospitals was lowest.  This seemed to be a logical
+extrapolation from the hospital measures.
+
+Here were the best states (average of hospital ranks is 2nd number):
+
+DE      17.67   2943.72 53429.17        16.33
+VT      34.17   3478.49 53790.5 17.67
+NH      30.38   3496.19 54711.23        17.46
+ME      36.78   3543.83 48202.83        18.44
+FL      16.04   3775.32 55383.43        15.01
+IN      33.01   3863.84 53322.89        18.4
+NE      34.3    3874.26 53814.96        18.35
+NJ      13.98   3926.52 60194.43        14.68
+ND      17.67   3938.64 66039.17        15.83
