@@ -1,0 +1,42 @@
+Most Variable Procedures
+
+Since the procedures were separated by category, it did not seem appropriate 
+to try to compare variability between them, since it was not an apples-to-apples
+comparison (i.e. TEC vs. Readm, Comp).    For this reason, the top ten most highly 
+variable procedures were presented independently for each category.
+
+Variability for a procedure was assessed by taking the standard deviation of all 
+scores reported for that measure.
+
+Here are the results for Readmission:
+MORT_30_PN      Pneumonia (PN) 30-Day Mortality Rate    2.36
+MORT_30_STK     Death rate for stroke patients  2.09
+MORT_30_HF      Heart failure (HF) 30-Day Mortality Rate        2
+READM_30_HF     Heart failure (HF) 30-Day Readmission Rate      1.89
+READM_30_CABG   Rate of unplanned readmission for CABG  1.68
+MORT_30_AMI     Acute Myocardial Infarction (AMI) 30-Day Mortality Rate 1.63
+READM_30_COPD   Rate of unplanned readmission for chronic obstructive pulmonary disease (COPD) patients     1.46
+MORT_30_CABG    Death rate for CABG     1.45
+MORT_30_COPD    Death rate for chronic obstructive pulmonary disease (COPD) patients    1.42
+READM_30_STK    Rate of unplanned readmission for stroke patients       1.34
+
+For Timely and Effective Care:
+STK_4   Thrombolytic Therapy    21.95
+AMI_7a  Fibrinolytic Therapy Received Within 30 Minutes Of Hospital Arrival     18.78
+OP_2    Fibrinolytic Therapy Received Within 30 Minutes of ED Arrival   18.05
+IMM_3_FAC_ADHPCT        Healthcare workers given influenza vaccination  16.35
+VTE_5   Warfarin therapy discharge instructions 16.3
+VTE_1   Venous thromboembolism prophylaxis      15.26
+STK_8   Stroke Education        14.01
+CAC_3   Home Management Plan of Care Document   12.72
+IMM_2   Immunization for influenza      11.94
+HF_1    Discharge instructions  11.83
+
+And for Complications:
+PSI_4_SURG_COMP Deaths among Patients with Serious Treatable Complications after Surgery   20.31
+PSI_12_POSTOP_PULMEMB_DVT       Serious blood clots after surgery       1.7
+COMP_HIP_KNEE   Rate of complications for hip/knee replacement patients 0.99
+PSI_15_ACC_LAC  Accidental cuts and tears from medical treatment        0.79
+PSI_14_POSTOP_DEHIS     A wound that splits open  after surgery on the abdomen or pelvis   0.36
+PSI_90_SAFETY   Serious complications   0.2
+PSI_6_IAT_PTX   Collapsed lung due to medical treatment 0.07

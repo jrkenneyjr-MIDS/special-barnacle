@@ -1,0 +1,43 @@
+Best Hospitals
+
+To answer this question, each hospital was ranked in its performance for a variety 
+of measures, including Timely and Effective Care (TEC), Readmissions Rates (Readm), 
+and Rates of Complications (Comp).  TEC measures were scoped down to consider only 
+measures that reflect a percentage completion rating for which a score of 100% 
+reflects the best case scenario.  Readm and Comp were consisted of measures for which 
+a score of 0% reflects the best case. 
+
+To reconcile the difference in reporting of these rating mechanisms, it was decided 
+that each hospital’s performance would be based on how their scores rank with respect 
+to the rest of the nation.  For every measure in the three aforementioned categories, 
+the hospital’s score was ranked in relation to every other hospital nationwide.  Each 
+rank was then averaged and standard deviation taken to establish the best performing 
+hospitals and to identify those hospitals for whom there was great variation in 
+scores.  
+
+Here were the 10 best performing hospitals (combined average is 4th number):
+
+040147  ARKANSAS SURGICAL HOSPITAL      AR      603.75  38      227.6   869.35  8459    397.68
+150160  INDIANA ORTHOPAEDIC HOSPITAL    IN      472.5   105.5   520.6   1098.6  8484    453.5
+360266  MOUNT CARMEL NEW ALBANY SURGICAL HOSPITAL       OH      751.25  25      426.2   1202.45     11196   463.38
+370210  OKLAHOMA SURGICAL HOSPITAL, LLC OK      460.42  306.5   501.14  1268.06 9646    611.8
+050769  HOAG ORTHOPEDIC INSTITUTE       CA      419.17  3.5     893.67  1316.34 10399   570.39
+450804  TEXAS ORTHOPEDIC HOSPITAL       TX      271.25  430.5   645.2   1346.95 7342    575.81
+050230  GARDEN GROVE HOSPITAL & MEDICAL CENTER  CA      266.21  751.64  346     1363.85 17452       560.67
+170183  KANSAS SURGERY & RECOVERY CENTER        KS      299.64  427.5   651.2   1378.34 7407588.07
+490048  LEWISGALE MEDICAL CENTER        VA      81.72   786.07  537.14  1404.93 17380   583.36
+100258  DELRAY MEDICAL CENTER   FL      208.84  651.43  657.14  1517.41 20403   663.96
+
+
+Here were the 10 hospitals with greatest procedural variation (last column):
+
+520194  ORTHOPAEDIC HOSPITAL OF WISCONSIN       WI      4354.47 20389   1317.74
+430090  SIOUX FALLS SPECIALTY HOSPITAL LLP      SD      3962.18 20940   1252.42333333333
+390156  MERCY FITZGERALD HOSPITAL       PA      4221.78 61006   1241.0733333333333
+230130  BEAUMONT HOSPITAL, ROYAL OAK    MI      3965.77 60432   1226.8033333333333
+430089  SIOUXLAND SURGERY CENTER LIMITED PARTNERSHIP    SD      4951.13 23812   1224.2
+050625  CEDARS-SINAI MEDICAL CENTER     CA      3926.54 65242   1223.0966666666667
+060023  ST MARYS HOSPITAL AND MEDICAL CENTER    CO      4183.98 74653   1212.68666666666
+390044  READING HOSPITAL        PA      3517.02 56318   1211.49
+330194  MAIMONIDES MEDICAL CENTER       NY      4246.23 70145   1208.8133333333333
+390321  SURGICAL SPECIALTY CENTER AT COORDINATED HEALTH PA      4487.77 19276   1204.476666667
